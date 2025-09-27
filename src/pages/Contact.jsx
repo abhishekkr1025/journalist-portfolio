@@ -87,7 +87,7 @@ export default function Contact() {
         </Box>
 
         {/* Form */}
-        <Box sx={{ maxWidth: {lg:'40%',sm:'60%'}, mx: 'auto' }}>
+        <Box sx={{ maxWidth: {lg:'600px',sm:'400px'}, mx: 'auto' }}>
           <Box component="form" onSubmit={handleSubmit}>
             {/* Name Field */}
             <Box mb={3}>
