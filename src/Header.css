@@ -1,0 +1,68 @@
+.header {
+  width: 100%;
+  border-bottom: 3px solid #ddd;
+  background: #fdf9f6;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon svg {
+  fill: black;
+  transition: fill 0.3s ease;
+}
+
+.social-icon svg:hover {
+  fill: #1da1f2; /* twitter blue on hover */
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.navicon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.lines,
+.lines::before,
+.lines::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: black;
+  left: 0;
+  transition: 0.3s;
+}
+
+.lines {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lines::before {
+  top: -8px;
+}
+
+.lines::after {
+  top: 8px;
+}
